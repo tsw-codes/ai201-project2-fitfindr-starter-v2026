@@ -41,7 +41,7 @@
 
 <!-- Three or four sentences: what a user asks for, and what they get back. -->
 
-
+A user asks for a thrifted item in plain language, like `vintage graphic tee under $30, size M`, and FitFindr searches the listings, builds an outfit around the best match using clothes already in their wardrobe, and writes a short fit card naming the item, its price, and its platform. When nothing matches, it stops after the search and says which part of the request to loosen.
 
 ---
 
@@ -59,10 +59,10 @@
 
 ### `search_listings`
 
-- **What it does:**
-- **Inputs:** <!-- name and type each: `max_price` (float), not "a price" -->
-- **Returns:**
-- **When it has nothing:**
+- **What it does:** searches through listings to find items that match what user requested
+- **Inputs:** description - strin, size - string, max - price flot 
+- **Returns:** A list of dicts that has id, title and descriptions
+- **When it has nothing:** returns none 
 
 ### `suggest_outfit`
 
